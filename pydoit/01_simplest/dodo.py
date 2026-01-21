@@ -15,6 +15,10 @@ To run:
     doit info <task>  # Show task details
     doit clean        # Remove all target files
     doit forget       # Clear the dependency database
+    doit -a          # Run all tasks and print the commands that are being executed
+    doit process_data
+    doit -sa process_data
+    doit -s process_data
 
 Key concepts:
 - 'actions': List of commands or Python functions to execute
