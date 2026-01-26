@@ -3,18 +3,18 @@ type = "pipeline"
 chartbook_format_version = "0.0.2"
 
 [site]
-title = "Example Charts from FRED"
-author = "backofficedev"
+title = "My Example Charts"
+author = "Jeremy"
 copyright = "2025"
 logo_path = ""
 favicon_path = ""
 
 [pipeline]
 id = "EX"
-pipeline_name = "Example Charts from FRED"
+pipeline_name = "My Example Charts"
 pipeline_description = "Example Charts from FRED"
-lead_pipeline_developer = "backofficedev"
-contributors = ["backofficedev"]
+lead_pipeline_developer = "Jeremy"
+contributors = ["Jeremy"]
 build_commands = "doit"
 os_compatibility = ["Windows", "Linux", "macOS"]
 git_repo_URL = ""

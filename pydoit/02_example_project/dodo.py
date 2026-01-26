@@ -53,8 +53,8 @@ def task_config():
 def task_pull():
     """Pull economic data from FRED."""
     return {
-        "actions": [f"python {SRC_DIR}/pull_fred.py"],
-        "file_dep": [SRC_DIR / "settings.py", SRC_DIR / "pull_fred.py"],
+        "actions": [f"python ./src/pull_fred.py"],
+        "file_dep": ["./src/settings.py", "./src/pull_fred.py"],
         "targets": [DATA_DIR / "fred.parquet"],
         "clean": True,
         "verbosity": 2,
@@ -68,10 +68,10 @@ def task_pull():
 def task_process():
     """Process the raw FRED data."""
     return {
-        "actions": [f"python {SRC_DIR}/process_data.py"],
+        "actions": [f"python ./src/process_data.py"],
         "file_dep": [
-            SRC_DIR / "settings.py",
-            SRC_DIR / "process_data.py",
+            "./src/settings.py",
+            "./src/process_data.py",
             DATA_DIR / "fred.parquet",  # Depends on pull task output
         ],
         "targets": [
@@ -90,10 +90,10 @@ def task_process():
 def task_chart():
     """Create visualizations from processed data."""
     return {
-        "actions": [f"python {SRC_DIR}/create_chart.py"],
+        "actions": [f"python ./src/create_chart.py"],
         "file_dep": [
-            SRC_DIR / "settings.py",
-            SRC_DIR / "create_chart.py",
+            "./src/settings.py",
+            "./src/create_chart.py",
             DATA_DIR / "processed.parquet",  # Depends on process task output
         ],
         "targets": [
