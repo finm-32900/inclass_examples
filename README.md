@@ -8,6 +8,9 @@ These examples are designed to illustrate specific concepts during lectures with
 
 | Directory | Description |
 |-----------|-------------|
+| [env_vars/](env_vars/) | Environment variables and configuration examples |
+| [latex/](latex/) | Progressive LaTeX examples from minimal to full articles and slides |
+| [project_paths/](project_paths/) | Approaches for project-root-anchored paths |
 | [pydoit/](pydoit/) | Progressive examples teaching PyDoit task automation |
 
 ## Course Overview

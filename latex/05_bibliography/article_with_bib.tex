@@ -1,0 +1,61 @@
+\documentclass{article}
+
+% Language setting
+\usepackage[english]{babel}
+
+% Set page size and margins
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Your Paper}
+\author{You}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This is a complete article template demonstrating citations and bibliography.
+We discuss the Capital Asset Pricing Model and the Fama-French factors.
+\end{abstract}
+
+\section{Introduction}
+
+The Capital Asset Pricing Model (CAPM), developed by \cite{sharpe1964capital},
+provides a framework for understanding the relationship between risk and
+expected return. This model laid the groundwork for decades of research
+in asset pricing.
+
+\section{The Fama-French Model}
+
+Building on the CAPM, \cite{fama1992cross} demonstrated that size and
+book-to-market factors explain a significant portion of cross-sectional
+variation in stock returns beyond what beta alone captures.
+
+\section{Mathematical Framework}
+
+The CAPM states that the expected return of an asset is:
+\begin{equation}
+    E[R_i] = R_f + \beta_i (E[R_m] - R_f)
+    \label{eq:capm}
+\end{equation}
+where $R_f$ is the risk-free rate, $R_m$ is the market return, and $\beta_i$
+measures the asset's sensitivity to market movements.
+
+The Fama-French three-factor model extends this to:
+\[
+    E[R_i] - R_f = \beta_i^{MKT}(R_m - R_f) + \beta_i^{SMB} \cdot SMB + \beta_i^{HML} \cdot HML
+\]
+
+\section{Conclusion}
+
+Both \cite{sharpe1964capital} and \cite{fama1992cross} represent foundational
+work in understanding asset returns.
+
+\bibliographystyle{alpha}
+\bibliography{bibliography}
+
+\end{document}

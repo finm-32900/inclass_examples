@@ -1,2 +1,21 @@
 
 .DS_Store
+**/__pycache__/
+*.doit.db*
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.pdf

@@ -1,0 +1,67 @@
+\documentclass{beamer}
+
+\title{My First Presentation}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{Welcome}
+    This is a minimal Beamer presentation.
+
+    \begin{itemize}
+        \item Beamer uses \texttt{frames} instead of pages
+        \item Each frame becomes a slide
+        \item Content works just like regular LaTeX
+    \end{itemize}
+\end{frame}
+
+\section{Content}
+
+\begin{frame}{Mathematics}
+    Beamer handles math just like articles:
+
+    \[
+        E[R_i] = R_f + \beta_i (E[R_m] - R_f)
+    \]
+
+    Inline math works too: $\alpha$, $\beta$, $\sigma^2$.
+\end{frame}
+
+\begin{frame}{Lists and Blocks}
+    \begin{block}{A Block}
+        Blocks highlight important content.
+    \end{block}
+
+    \begin{enumerate}
+        \item First point
+        \item Second point
+        \item Third point
+    \end{enumerate}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Summary}
+    \begin{itemize}
+        \item Beamer creates PDF presentations
+        \item Structure: frames, sections, blocks
+        \item Math and formatting work normally
+    \end{itemize}
+
+    \vspace{1cm}
+    \centering
+    \textbf{Questions?}
+\end{frame}
+
+\end{document}
