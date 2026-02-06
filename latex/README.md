@@ -17,6 +17,7 @@ Install [TeX Live](https://tug.org/texlive/) to compile these examples.
 | [05_bibliography/](05_bibliography/) | Citations and references (complete article) |
 | [06_beamer_minimal/](06_beamer_minimal/) | Minimal presentation with Beamer |
 | [07_beamer_full/](07_beamer_full/) | Full presentation with Metropolis theme |
+| [08_handout/](08_handout/) | Custom handout template with sidebars |
 
 ## Compilation
 
@@ -25,10 +26,18 @@ Most examples compile with:
 pdflatex filename.tex
 ```
 
-For documents with bibliography (05, 07):
+For documents with bibliography using bibtex (05, 07):
 ```bash
 pdflatex filename.tex
 bibtex filename
+pdflatex filename.tex
+pdflatex filename.tex
+```
+
+For documents with bibliography using biblatex/biber (08):
+```bash
+pdflatex filename.tex
+biber filename
 pdflatex filename.tex
 pdflatex filename.tex
 ```
@@ -47,3 +56,4 @@ xelatex filename.tex
 5. **05_bibliography**: Academic writing with citations
 6. **06_beamer_minimal**: Presentations use frames, not pages
 7. **07_beamer_full**: Professional presentations with themes
+8. **08_handout**: Custom class files, sidebars, branding

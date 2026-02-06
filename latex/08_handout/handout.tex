@@ -1,0 +1,234 @@
+\documentclass[10pt,letterpaper]{handout}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{fontawesome}
+\usepackage{booktabs}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+
+% For reference: https://creative.uchicago.edu/color-system/
+\definecolor{Maroon}{HTML}{800000}
+\definecolor{DarkGreystone}{HTML}{737373}
+\definecolor{Greystone}{HTML}{A6A6A6}
+\definecolor{LightGreystone}{HTML}{D9D9D9}
+\definecolor{Goldenrod}{HTML}{EAAA00}
+\definecolor{Terracotta}{HTML}{DE7C00}
+
+% Change the colours if you want to
+\definecolor{Bright}{HTML}{58318f}
+\definecolor{Green}{HTML}{319866}
+\definecolor{Black}{HTML}{111111}
+\definecolor{LightGrey}{HTML}{515c50}
+\colorlet{heading}{Maroon}
+\colorlet{titlecolor}{Maroon}
+\colorlet{accent}{Terracotta}
+\colorlet{emphasis}{Black}
+\colorlet{body}{DarkGreystone}
+
+
+
+% Change the bullets for itemize and rating marker
+% for \risk if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Weekly Market Brief}
+\tagline{Equity \& Fixed Income Overview --- Quantitative Research}
+\asof{Data as of February 7, 2026}
+\logo{2.5cm}{uchicago-shield.png}
+
+
+\docinfo{%
+  \analyst{J.\ Bejarano}{jbejarano@uchicago.edu}
+}
+
+
+%% Make the header extend all the way to the right
+\begin{fullwidth}
+\makeheader
+\end{fullwidth}
+
+%% ============================================================
+%% Page 1: Market narrative & chart (left) | Statistics (right)
+%% ============================================================
+\begin{paracol}{2}
+
+% --- Left column: Market overview and chart ---
+\need{Market Overview}
+
+US equity markets advanced for the third consecutive week as
+investors digested strong earnings reports from the technology sector.
+The S\&P 500 extended its rally, supported by expectations of a
+patient Federal Reserve and resilient corporate profit margins.
+
+\divider
+
+\protosubsection{Trailing Performance}
+
+{\centering\includegraphics[width=0.96\linewidth]{chart_sp500.pdf}\par}
+
+\divider
+
+\need{Key Developments}
+
+\begin{itemize}
+	\item Federal Reserve held rates steady at the January FOMC meeting,
+	      signaling a data-dependent approach through 2026
+	\item Q4 2025 earnings season: 78\% of S\&P 500 companies
+	      beat estimates (\cite{bloomberg2026})
+	\item 10-year Treasury yield stabilized near 4.2\%
+	      after December volatility
+	\item PCE inflation reading came in at 2.4\% YoY,
+	      within the Fed's target range
+\end{itemize}
+
+\divider
+
+% --- Right column: Key statistics and risk ratings ---
+\switchcolumn
+
+\need{Key Statistics}
+
+\itemtag{S\&P 500: 6,040}
+\itemtag{VIX: 15.8}
+\itemtag{10Y Yield: 4.21\%}
+
+\divider\smallskip
+
+\itemtag{Fed Funds: 4.25--4.50\%}
+\itemtag{WTI Crude: \$73.20}
+\itemtag{Gold: \$2,810}
+
+
+
+\need{Sector Momentum}
+
+\risk{Technology}{5}
+\risk{Financials}{4}
+\risk{Healthcare}{3}
+\risk{Energy}{2}
+\risk{Consumer Staples}{3}
+\risk{Utilities}{2}
+
+
+
+\need{Risk Assessment}
+
+\risk{Equity Volatility}{2}
+\risk{Rate Risk}{3}
+\risk{Credit Spreads}{2}
+\risk{Geopolitical}{3}
+
+
+
+\need{Data Sources}
+
+\itemtag{Yahoo Finance}
+\itemtag{FRED}
+\itemtag{Bloomberg}
+
+\end{paracol}
+
+
+\clearpage
+
+%% ============================================================
+%% Page 2: Yield curve & returns (left) | Alerts & notes (right)
+%% ============================================================
+\begin{paracol}{2}
+
+% --- Left column: Yield curve chart, returns table, sources ---
+\need{Yield Curve Analysis}
+
+The current yield curve shows a mild upward slope, having
+normalized from the prolonged inversion of 2023--2024.
+The 2s10s spread has returned to positive territory,
+consistent with expectations for moderate economic growth
+(\cite{adrian2013}).
+
+\smallskip
+
+{\centering\includegraphics[width=0.96\linewidth]{chart_yield_curve.pdf}\par}
+
+\divider
+
+\need{Returns Summary}
+
+\protosubsection{Sector Returns (\%)}
+
+{
+    % \footnotesize
+    % \small
+    \normalsize
+    % \large
+\centering
+\input{returns_table.tex}
+}
+
+\divider
+
+\need{Sources}
+
+\nocite{*}
+
+\printbibliography
+
+\divider
+
+% --- Right column: Alerts, notes, contacts ---
+\switchcolumn
+
+\need{Alerts}
+% See https://mirrors.ibiblio.org/CTAN/fonts/fontawesome/doc/fontawesome.pdf
+\warningsigns{\faLineChart}{Earnings Season}{Q4 results continue
+through mid-February. Watch for guidance revisions in
+technology and financials.}
+\warningsigns{\faUniversity}{FOMC Minutes}{Minutes from the January
+meeting release Feb.\ 19. Markets pricing 2 cuts in 2026.}
+\warningsigns{\faGlobe}{Geopolitical}{Trade policy uncertainty remains
+elevated. Monitor tariff developments and their impact on supply chains.}
+\warningsigns{\faExclamationTriangle}{Volatility}{VIX near cycle lows
+suggests complacency. Tail risk protection is historically cheap.}
+
+
+\need{Notes}
+
+\divider
+
+\divider
+
+\divider
+
+\divider
+
+\divider
+
+\divider
+
+\divider
+
+\divider
+
+
+
+\need{Analyst Contact}
+
+Research Division
+
+FINM 33900 --- Full Stack Quantitative Finance
+
+
+\end{paracol}
+
+
+\end{document}

@@ -18,4 +18,10 @@
 *.nav
 *.snm
 *.vrb
-*.pdf
+
+*.bcf
+
+*.xml
+
+*.env*
+!.env.example
