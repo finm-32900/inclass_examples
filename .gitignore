@@ -25,3 +25,6 @@
 
 *.env*
 !.env.example
+
+# Script output directories
+**/output/

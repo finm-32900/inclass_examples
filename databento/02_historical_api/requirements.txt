@@ -1,0 +1,4 @@
+databento
+python-dotenv
+requests
+pandas

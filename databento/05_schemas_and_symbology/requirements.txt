@@ -1,0 +1,3 @@
+databento
+python-dotenv
+pandas

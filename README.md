@@ -8,6 +8,7 @@ These examples are designed to illustrate specific concepts during lectures with
 
 | Directory | Description |
 |-----------|-------------|
+| [databento/](databento/) | Databento market data: SDK vs raw API (HTTP and TCP) |
 | [env_vars/](env_vars/) | Environment variables and configuration examples |
 | [latex/](latex/) | Progressive LaTeX examples from minimal to full articles and slides |
 | [project_paths/](project_paths/) | Approaches for project-root-anchored paths |
