@@ -13,6 +13,7 @@ These examples are designed to illustrate specific concepts during lectures with
 | [latex/](latex/) | Progressive LaTeX examples from minimal to full articles and slides |
 | [project_paths/](project_paths/) | Approaches for project-root-anchored paths |
 | [pydoit/](pydoit/) | Progressive examples teaching PyDoit task automation |
+| [sphinx/](sphinx/) | Sphinx documentation: quickstart, autodoc2, MyST, and themes |
 
 ## Course Overview
 

@@ -28,3 +28,4 @@
 
 # Script output directories
 **/output/
+sphinx/01_quickstart/_build/

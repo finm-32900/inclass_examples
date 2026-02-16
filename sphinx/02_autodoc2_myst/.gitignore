@@ -1,0 +1,9 @@
+# Sphinx build output
+docs/_build/
+
+# autodoc2 generated files
+docs/apidocs/
+
+# Python
+__pycache__/
+*.py[cod]
